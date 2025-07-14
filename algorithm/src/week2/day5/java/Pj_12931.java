@@ -1,4 +1,4 @@
-package day5.java;
+package week2.day5.java;
 
 public class Pj_12931 {
 

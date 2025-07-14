@@ -1,4 +1,4 @@
-package day2.java;
+package week2.day2.java;
 
 public class Pj_120802 {
     public int solution(int num1, int num2) {
