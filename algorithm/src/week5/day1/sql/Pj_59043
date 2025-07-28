@@ -1,0 +1,6 @@
+select i.ANIMAL_ID, o.NAME
+from ANIMAL_INS i
+inner join ANIMAL_OUTS o
+on o.ANIMAL_ID = i.ANIMAL_ID
+where i.DATETIME > o.DATETIME
+order by i.DATETIME asc;

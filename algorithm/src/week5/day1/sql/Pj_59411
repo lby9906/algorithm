@@ -1,0 +1,6 @@
+select o.ANIMAL_ID, o.NAME
+from ANIMAL_OUTS o
+inner join ANIMAL_INS i
+on o.ANIMAL_ID = i.ANIMAL_ID
+where DATEDIFF(o.DATETIME, i.DATETIME)
+order by DATEDIFF(o.DATETIME, i.DATETIME) desc limit 2;
