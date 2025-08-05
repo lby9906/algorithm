@@ -1,0 +1,8 @@
+select r.CAR_ID
+from CAR_RENTAL_COMPANY_CAR c
+inner join CAR_RENTAL_COMPANY_RENTAL_HISTORY r
+on r.CAR_ID = c.CAR_ID
+where c.CAR_TYPE LIKE '%세단%'
+and MONTH(r.START_DATE) LIKE '%10%'
+group by r.CAR_ID
+order by r.CAR_ID desc;
