@@ -1,0 +1,8 @@
+select CATEGORY, PRICE, PRODUCT_NAME
+from FOOD_PRODUCT p1
+where PRICE = (
+    select max(PRICE)
+    from FOOD_PRODUCT
+    where p1.CATEGORY = CATEGORY
+) and CATEGORY REGEXP('과자|국|김치|식용유')
+order by PRICE desc;
