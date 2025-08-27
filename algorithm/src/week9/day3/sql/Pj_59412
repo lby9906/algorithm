@@ -1,0 +1,5 @@
+select HOUR(DATETIME) as HOUR, count(*) as count
+from ANIMAL_OUTS
+group by 1
+having HOUR between 9 and 19
+order by 1;
